@@ -96,7 +96,7 @@ int main()
         glBindBuffer(GL_ARRAY_BUFFER, entity_vbo);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, entity_ebo);
         
-        //draw a tile
+        //TEST SCENE START
         glUseProgram(program);
 
         rain::Mat model = rain::identity();
@@ -185,6 +185,7 @@ int main()
         rain::setColor(program, vector3(1.0f, 0.5f, 0.0f));
 
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)0);
+        //TEST SCENE END
         
         //print matrix
         // std::cout << r.m[0]  << "," << r.m[1]  << "," << r.m[2]  << "," << r.m[3] << std::endl;
